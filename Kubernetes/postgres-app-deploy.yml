@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres-app-deploy
+  lables:
+    tier: frontend
+spec:
+  replicas: 2
+  template:
+    metadata:
+      name: postgres-app-pod
+      labels:
+       app: postgres-app
+    spec:
+      containers:
+      - name: postgres-app
+        image: postgres:9.4
+        env:
+        - name: POSTGRES_USER
+          value: "postgres"
+        - name:  POSTGRES_PASSWORD
+          value: "postgres"
+        ports:
+        - containerPort: 5432
+  selector:
+    matchLabels:
+      name: postgres-app-pod
+      labels:
+       app: postgres-app
