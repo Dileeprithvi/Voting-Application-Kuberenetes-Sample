@@ -8,6 +8,8 @@ spec:
   type: LoadBalancer
   ports:
     - targetPort: 80
-      port: 80
+      port: 90
+      NodePort: 32333
   selector:
     app: result-app
+    name: example

@@ -11,6 +11,7 @@ spec:
       name: worker-app-pod
       labels:
        app: worker-app
+       name: example
     spec:
       containers:
       - name: worker-app
@@ -18,3 +19,4 @@ spec:
   selector:
     matchLabels:
        app: worker-app
+       name: example

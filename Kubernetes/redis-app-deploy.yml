@@ -11,6 +11,7 @@ spec:
       name: redis-app-pod
       labels:
        app: redis-app
+       name: example
     spec:
       containers:
       - name: redis-app
@@ -20,3 +21,4 @@ spec:
   selector:
     matchLabels:
        app: redis-app
+       name: example

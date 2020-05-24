@@ -10,3 +10,4 @@ spec:
       port: 5432
   selector:
     app: postgres-pod
+    name: example

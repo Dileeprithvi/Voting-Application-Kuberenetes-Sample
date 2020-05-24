@@ -5,12 +5,13 @@ metadata:
   labels:
     tier: frontend
 spec:
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       name: voting-app-pod
       labels:
        app: voting-app
+       name: example
     spec:
       containers:
       - name: voting-app
@@ -20,5 +21,6 @@ spec:
   selector:
     matchLabels:
        app: voting-app
+       name: example
 
 
