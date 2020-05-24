@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: postgres-app-deploy
-  lables:
+  labels:
     tier: frontend
 spec:
   replicas: 2
@@ -24,6 +24,4 @@ spec:
         - containerPort: 5432
   selector:
     matchLabels:
-      name: postgres-app-pod
-      labels:
        app: postgres-app

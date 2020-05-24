@@ -19,6 +19,4 @@ spec:
           - containerPort: 80
   selector:
     matchLabels:
-      name: result-app-pod
-      labels:
        app: result-app

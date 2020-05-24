@@ -10,6 +10,4 @@ spec:
     - targetPort: 80
       port: 80
   selector:
-    name: result-app-pod
-    labels:
-      app: result-app
+    app: result-app

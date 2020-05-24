@@ -19,6 +19,4 @@ spec:
           - containerPort: 6379
   selector:
     matchLabels:
-      name: redis-app-pod
-      labels:
        app: redis-app

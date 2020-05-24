@@ -17,6 +17,4 @@ spec:
         image: dockersamples/examplevotingapp_worker
   selector:
     matchLabels:
-      name: worker-app-pod
-      labels:
        app: worker-app

@@ -19,8 +19,6 @@ spec:
           - containerPort: 80
   selector:
     matchLabels:
-      name: voting-app-pod
-      labels:
        app: voting-app
 
 

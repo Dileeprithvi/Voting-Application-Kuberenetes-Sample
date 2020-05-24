@@ -8,7 +8,5 @@ spec:
   ports:
     - targetPort: 5432
       port: 5432
-   selector:
-      name: postgres-app-pod
-      labels:
-       app: postgres-app
+  selector:
+    app: postgres-pod
